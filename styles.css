@@ -5,7 +5,6 @@
   --text-light: #525252;
   --extra-light: #a3a3a3;
   --white: #ffffff;
-  --black: #000000;
   --max-width: 1200px;
   --header-font: "Merriweather", serif;
 }
@@ -107,7 +106,7 @@ nav {
 
 .nav__menu__btn {
   font-size: 1.5rem;
-  color: var(--black);
+  color: var(--white);
   cursor: pointer;
 }
 
@@ -279,7 +278,7 @@ nav {
 }
 
 .client__card img {
-  max-width: 200px;
+  max-width: 120px;
   margin-inline: auto;
   margin-bottom: 2rem;
   border-radius: 100%;
@@ -363,25 +362,31 @@ nav {
 
 .instagram__container {
   overflow: hidden;
-  white-space: nowrap;
 }
 
 .instagram__flex {
   margin-top: 2rem;
+  width: max-content;
   display: flex;
   align-items: center;
   gap: 1rem;
-  animation: scroll 35s linear infinite;
+
+  animation: scroll 45s linear infinite;
 }
 
 .instagram__flex img {
-  max-width: 140px;
+  max-width: 145px;
 }
 
 @keyframes scroll {
   to {
     transform: translateX(calc(-50% - 0.5rem));
   }
+}
+
+.instagram__btn {
+  margin-top: 2rem;
+  text-align: center;
 }
 
 .footer__container {
