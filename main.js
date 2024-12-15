@@ -76,3 +76,35 @@ Array.from(instagram.children).forEach((item) => {
   duplicateNode.setAttribute("aria-hidden", true);
   instagram.appendChild(duplicateNode);
 });
+
+
+(function() {
+  emailjs.init("Tffz49-muf-Wr8Cnk");
+})();
+
+document.querySelectorAll("form").forEach((form) => {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const data = {};
+    formData.forEach((value, key) => {
+      data[key] = value;
+    });
+
+    const templateId = form.dataset.template;
+
+    emailjs
+      .send("service_pp65mro", templateId, data) 
+      .then(
+        (response) => {
+          alert("Message sent successfully!");
+          form.reset();
+        },
+        (error) => {
+          alert("Failed to send message. Please try again later.");
+          console.error("EmailJS Error:", error);
+        }
+      );
+  });
+});

@@ -37,7 +37,7 @@
           <li><a href="#service">SERVICES</a></li>
           </li>
           <li><a href="#client">CLIENT</a></li>
-          <li><a href="#blog">LANDSCAPE</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
           <li><a href="#contact">CONTACT US</a></li>
         </ul>
       </nav>
@@ -65,19 +65,19 @@
         <div class="portfolio__card">
           <img src="assets/portfolio-1.jpg" alt="portfolio" />
           <div class="portfolio__content">
-            <button class="btn">MORE PORTRAITS</button>
+            <button class="btn"><a href="gallery.html">MORE PORTRAITS</a></button>
           </div>
         </div>
         <div class="portfolio__card">
           <img src="assets/portfolio-2.jpg" alt="portfolio" />
           <div class="portfolio__content">
-            <button class="btn">MORE WEDDINGS</button>
+            <button class="btn"><a href="gallery.html">MORE WEDDINGS</a></button>
           </div>
         </div>
         <div class="portfolio__card">
           <img src="assets/portfolio-3.jpg" alt="portfolio" />
           <div class="portfolio__content">
-            <button class="btn">MORE FAMILY</button>
+            <button class="btn"><a href="gallery.html">MORE FAMILY</a></button>
           </div>
         </div>
       </div>
@@ -164,8 +164,11 @@
         <img src="assets/image-6.jpg" alt="gallery" />
         <img src="assets/image-7.jpg" alt="gallery" />
         <img src="assets/image-8.jpg" alt="gallery" />
+        <img src="assets/image-9.jpg" alt="gallery" />
+        <img src="assets/image-10.jpg" alt="gallery" />
       </div>
       <div class="gallery__btn">
+        <a href="gallery.html">
         <button class="btn">VIEW GALLERY</button>
       </div>
     </section>
@@ -183,6 +186,7 @@
             join us as we explore stunning landscapes and share the stories behind each photo.
           </p>
           <div class="blog__btn">
+            <a href="gallery.html">
             <button class="btn">See More</button>
           </div>
         </div>
@@ -191,7 +195,7 @@
 
     <section class="section__container instagram__container">
       <h2 class="section__header">
-        <a~ >~ INSTAGRAM ~</a>
+        ~ INSTAGRAM ~
       </h2>
       
       
@@ -221,6 +225,66 @@
       </div>
       
     </section>
+
+    <section class="section__container contact__container" id="contact">
+      <h2 class="section__header">~ CONTACT US ~</h2>
+      <section class="contact__content">
+        <form id="contact-form" class="contact-form" data-template="template_ackvvrt">
+          <h3>Send Us a Message</h3>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+          </div>
+          <button type="submit" class="btn">SEND MESSAGE</button>
+        </form>
+        
+    
+        <form id="schedule-form" class="schedule-form" data-template="template_mda2k78">
+          <h3>Schedule a Photography Session</h3>
+          <div class="form-group">
+            <label for="session-type">Session Type</label>
+            <select id="session-type" name="session-type">
+              <option value="portraits">Portraits</option>
+              <option value="family">Family</option>
+              <option value="weddings">Weddings</option>
+              <option value="landscapes">Landscapes</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <button type="submit" class="btn">BOOK SESSION</button>
+        </form>
+        
+    
+        <form id="print-order-form" class="print-order-form" data-template="template_ackvvrt">
+          <h3>Order Prints</h3>
+          <div class="form-group">
+            <label for="photo-id">Photo ID</label>
+            <input type="text" id="photo-id" name="photo-id" placeholder="Enter Photo ID" required />
+          </div>
+          <div class="form-group">
+            <label for="print-size">Print Size</label>
+            <select id="print-size" name="print-size">
+              <option value="4x6">4x6</option>
+              <option value="5x7">5x7</option>
+              <option value="8x10">8x10</option>
+              <option value="11x14">11x14</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">ORDER PRINT</button>
+        </form>
+      </section>   
+    
 
     <footer id="contact">
       <div class="section__container footer__container">

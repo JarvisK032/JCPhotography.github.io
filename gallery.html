@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | JC Photography</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header" id="gallery">
+        <nav>
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <a href="#"><img src="assets/logo-white.png" alt="logo"></a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main class="section__container gallery">
+        <div class="filter-buttons">
+            <button class="btn filter-btn" data-category="all">All</button>
+            <button class="btn filter-btn" data-category="portraits">Portraits</button>
+            <button class="btn filter-btn" data-category="landscapes">Landscapes</button>
+            <button class="btn filter-btn" data-category="weddings">Weddings</button>
+            <button class="btn filter-btn" data-category="family">Family</button>
+        </div>
+        <div class="gallery__grid">
+            <div class="gallery-item" data-category="portraits">
+                <img src="assets/portrait1.jpg" alt="Portrait 1">
+            </div>
+            <div class="gallery-item" data-category="landscapes">
+                <img src="assets/landscape1.jpg" alt="Landscape 1">
+            </div>
+            <div class="gallery-item" data-category="weddings">
+                <img src="assets/wedding1.jpg" alt="Wedding 1">
+            </div>
+            <div class="gallery-item" data-category="family">
+                <img src="assets/family1.jpg" alt="Family 1">
+            </div>
+            <div class="gallery-item" data-category="portraits">
+                <img src="assets/portrait2.jpg" alt="Portrait 2">
+            </div>
+            <div class="gallery-item" data-category="landscapes">
+                <img src="assets/landscape2.jpg" alt="Landscape 2">
+            </div>
+            <div class="gallery-item" data-category="weddings">
+                <img src="assets/wedding2.jpg" alt="Wedding 2">
+            </div>
+            <div class="gallery-item" data-category="family">
+                <img src="assets/family2.jpg" alt="Family 2">
+            </div>
+            <div class="gallery-item" data-category="weddings">
+                <img src="assets/wedding3.jpg" alt="Wedding 3">
+            </div>
+            <div class="gallery-item" data-category="weddings">
+                <img src="assets/wedding4.jpg" alt="Wedding 4">
+            </div>
+            <div class="gallery-item" data-category="weddings">
+                <img src="assets/wedding5.jpg" alt="Wedding 5">
+            </div>
+            
+        </div>
+    </main>
+
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+    <footer id="contact">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <img src="assets/logo-dark.png" alt="logo">
+            </div>
+            <div class="footer__col">
+                <ul class="footer__links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>GET IN TOUCH</h4>
+                <p>Send us a message on Instagram to book a session or for inquiries.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
